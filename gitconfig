@@ -1,0 +1,22 @@
+[core]
+    editor = vim
+    filemode = false
+	autoclrf = true
+	autocrlf = input
+[user]
+    name = Andrew Sorenson
+    email = andrew.sorenson@clearlink.com
+[color]
+    ui = auto
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+    ignore = update-index --assume-unchanged
+    watch = update-index --no-assume-unchanged
+    ignored = !git ls-files -v | grep "^[[:lower:]]" --color
+    co = checkout
+
+[merge]
+	tool = kdiff3
+    renamelimit = 3000
+[commit]
+	verbose = true
