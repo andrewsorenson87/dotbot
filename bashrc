@@ -14,7 +14,6 @@ MAPIWP="$myHome/src/mapi-server/public/wp-updates"
 etc=/usr/local/etc
 
 # append to the history file, don't overwrite it
-shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
@@ -24,13 +23,16 @@ export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH:$myHome/bin:./vendor/
 WEBROOT="/usr/local/var/www/htdocs";
 CMSROOT="$WEBROOT/cms/trunk/html";
 
+function ff {
+    find . -type f -iname "*.$1" | xargs grep ${@:2}
+}
+
 WP_CONTENT_DIR="wp-content"
 SELENIUM_DIR="$EAGLEDIR/selenium"
 SELENIUM_SERVER="$myHome/Downloads/selenium/selenium-server-standalone-2.45.0.jar"
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
-shopt -s checkwinsize
 
 function parse_git_branch {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
@@ -67,9 +69,15 @@ alias egrep='egrep --color=auto'
 alias ll='ls -alF'
 alias l='ls -alF'
 
+alias dc='docker-compose'
+alias dcrrm='docker-compose run --rm'
+alias dcrrmp='docker-compose run --rm --service-ports'
+
 alias ..="cd ../"
 
 alias tmux="TERM=screen-256color tmux"
+alias goland='/usr/local/bin/goland'
+
 
 alias ten="tail -f /usr/local/var/log/nginx/error.log";
 alias ven="vim /usr/local/var/log/nginx/error.log";
@@ -94,9 +102,6 @@ function pfind {
 #put file on local clipboard
 alias cb='xclip -selection c -i'
 alias cbm='pbcopy';
-
-stty werase undef
-bind 'C-w:unix-filename-rubout'
 
 PROMPT_COMMAND='history -a'
 

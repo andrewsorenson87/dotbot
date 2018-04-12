@@ -3,7 +3,6 @@
 let mapleader = ","
 let g:mapleader = ","
 
-set surround
 set so=7
 set ignorecase "Ignore case when searching
 set hlsearch "Highlight search things

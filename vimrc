@@ -1,13 +1,7 @@
 source ~/.vimCommon
 
-" Sets how many lines of history VIM has to remember
 set history=700
 
-" Enable filetype plugin
-filetype plugin on
-filetype indent on
-
-" Set to auto read when a file is changed from the outside
 set autoread
 
 " Fast saving
@@ -47,8 +41,6 @@ colorscheme molokai
 set t_Co=256
 set background=dark
 hi Normal ctermbg=none ctermfg=none
-
-set nonu
 
 set encoding=utf8
 try
@@ -253,8 +245,8 @@ set guitablabel=%t
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Do :help cope if you are unsure what cope is. It's super useful!
 map <leader>cc :botright cope<cr>
-map <leader>n :cn<cr>
-map <leader>p :cp<cr>
+"map <leader>n :cn<cr>
+"map <leader>p :cp<cr>
 
 
 """"""""""""""""""""""""""""""
@@ -365,8 +357,8 @@ noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 map <leader>q :e ~/buffer<cr>
 au BufRead,BufNewFile ~/buffer iab <buffer> xh1 ===========================================
 
-map <leader>pp :setlocal paste!<cr>
-map <leader>pn :setlocal nopaste<cr>
+""map <leader>pp :setlocal paste!<cr>
+""map <leader>pn :setlocal nopaste<cr>
 
 map <leader>bb :cd ..<cr>
 
@@ -437,6 +429,7 @@ nnoremap <silent> <Plug>Kwbd :<C-u>Kwbd<CR>
 nmap <C-A> <Plug>Kwbd
 
 nmap <leader>w <C-W><C-W>
+nmap <leader>p <C-W>p
 nmap <leader>x :set paste<CR>i
 nmap <leader>v :set nopaste<CR>
 
