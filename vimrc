@@ -1,3 +1,4 @@
+source ~/.vim/bundles.vim
 source ~/.vimCommon
 
 set history=700
@@ -35,7 +36,6 @@ syntax enable "Enable syntax hl
 
 " Set font according to system
 " set gfn=Consolas:h9:cANSI
-set shell=/bin/bash\ --rcfile\ /home/wcurtis/.bashrc
 
 colorscheme molokai
 set t_Co=256
