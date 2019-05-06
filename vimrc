@@ -34,6 +34,7 @@ set novisualbell
 " set t_vb=
 " set tm=500
 set number
+autocmd Filetype yml setlocal ts=2 sts=2 sw=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts

@@ -9,6 +9,8 @@ Plugin 'gregsexton/MatchTag'
 Plugin 'tomasr/molokai'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+
 " Plugin 'Raimondi/delimitMate'
 " Plugin 'wesQ3/vim-windowswap'
 " Plugin 'vim-scripts/Tabmerge'

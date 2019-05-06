@@ -1,10 +1,16 @@
-# If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/andrew.sorenson/.oh-my-zsh
-
 export PATH=$PATH:/Users/andrew.sorenson/.composer/vendor/bin
+export PATH=$PATH:/Users/andrew.sorenson/Library/Python/3.7/bin
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+export PATH="$PATH:/opt/yarn-[version]/bin"
+export GOPATH=$HOME/go
+
+export GIT_EDITOR=vim
+export EDITOR=vim
+export VISUAL=vim
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -100,8 +106,13 @@ alias dcr='dc run --rm'
 alias dcrp='dcr --service-ports'
 alias dcrrm='dcr'
 alias dcrrmp='dcrp'
+alias dv='docker volume'
+alias dockerkillall='docker rm -f $(docker ps -aq)'
+alias dm='docker-machine'
+
+alias pa='php artisan'
 
 alias rp=". ~/.zshrc"
+alias zs="vim ~/.zshrc"
 
-alias goland='usr/local/bin/goland'
-
+alias gitreset='git fetch --all && git reset --hard'
