@@ -5,7 +5,7 @@ export ZSH=/Users/andrew.sorenson/.oh-my-zsh
 export PATH=$PATH:/Users/andrew.sorenson/.composer/vendor/bin
 export PATH=$PATH:/Users/andrew.sorenson/Library/Python/3.7/bin
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
-export PATH="$PATH:/opt/yarn-[version]/bin"
+export PATH="$PATH:/opt/yarn-/bin"
 export GOPATH=$HOME/go
 
 export GIT_EDITOR=vim
@@ -17,6 +17,9 @@ export VISUAL=vim
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
+plugins=(
+git
+)
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
@@ -114,5 +117,7 @@ alias pa='php artisan'
 
 alias rp=". ~/.zshrc"
 alias zs="vim ~/.zshrc"
+
+alias ap="./aws-profile.sh"
 
 alias gitreset='git fetch --all && git reset --hard'
