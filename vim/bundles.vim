@@ -35,6 +35,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-obsession'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'vim-scripts/ReplaceWithRegister'
 Plugin 'othree/html5.vim'
 Plugin 'godlygeek/tabular'
 

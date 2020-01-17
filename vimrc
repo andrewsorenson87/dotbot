@@ -4,6 +4,7 @@ source ~/.vim/bundles.vim
 " Create the 'vimrc' autocmd group, used below, and immediately clear it in
 " case this file is being sourced a second time.
 "
+
 augroup vimrc | execute 'autocmd!' | augroup END
 
 filetype plugin indent on     " required!
@@ -504,3 +505,10 @@ set encoding=utf8
 " au BufNewFile,BufRead *.fs set syntax=fsharp
 "
 "
+autocmd FileType make       setlocal ts=2 sts=2 tw=2 noet
+autocmd Filetype html       setlocal ts=2 sts=2 sw=2
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
+autocmd Filetype php        setlocal ts=4 sts=4 sw=4
+au Filetype yaml            setlocal ts=2 sts=2 sw=2 expandtab
+au Filetype typescript      setlocal ts=2 sts=2 sw=2 expandtab
+au BufNewFile,BufRead Jenkinsfile setf groovy

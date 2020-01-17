@@ -121,3 +121,4 @@ alias zs="vim ~/.zshrc"
 alias ap="./aws-profile.sh"
 
 alias gitreset='git fetch --all && git reset --hard'
+alias ports='sudo lsof -i -n -P | grep TCP'
