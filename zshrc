@@ -112,6 +112,7 @@ alias dcrrmp='dcrp'
 alias dv='docker volume'
 alias dockerkillall='docker rm -f $(docker ps -aq)'
 alias dm='docker-machine'
+alias dps='docker ps'
 
 alias pa='php artisan'
 
@@ -122,3 +123,8 @@ alias ap="./aws-profile.sh"
 
 alias gitreset='git fetch --all && git reset --hard'
 alias ports='sudo lsof -i -n -P | grep TCP'
+alias gitl='git log --pretty=format:"%h - %an, %ar : %s"'
+alias gpr='git pull --rebase'
+alias quickhttp='docker run --rm -it -v $PWD:/usr/share/nginx/html:ro -p 8080:80 -p 4443:443 aarobc/quickhttp'
+
+alias clearlaravel='dcr chat sh -c "./artisan cache:clear && ./artisan config:clear && ./artisan config:cache"'

@@ -5,11 +5,11 @@ call vundle#begin()
 
 
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'christoomey/vim-sort-motion'
 Plugin 'gregsexton/MatchTag'
 Plugin 'tomasr/molokai'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
 
 " Plugin 'Raimondi/delimitMate'
 " Plugin 'wesQ3/vim-windowswap'
@@ -29,8 +29,6 @@ Plugin 'kshenoy/vim-signature'
 " Plugin 'klen/python-mode'
 Plugin 'unblevable/quick-scope'     " xor Vundle
 " git plugin
-Plugin 'tpope/vim-fugitive'
-Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-obsession'

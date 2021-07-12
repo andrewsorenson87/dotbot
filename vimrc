@@ -333,7 +333,7 @@ set encoding=utf8
 " " => Command-T
 " """"""""""""""""""""""""""""""
 " let g:CommandTMaxHeight = 15
-" set wildignore+=*.o,*.obj,.git,*.pyc
+set wildignore+=*.o,*.obj,.git,*.pyc
 " noremap <leader>j :CommandT<cr>
 " noremap <leader>y :CommandTFlush<cr>
 "
@@ -441,7 +441,6 @@ set encoding=utf8
 " endfunction
 "
 " " autocmd VimEnter * call NT()
-" " au BufNewFile,BufRead *.twig set syntax=htmljinja
 "
 " "NERDTree Settings
 " " -------------------------------------------------------------
@@ -512,3 +511,4 @@ autocmd Filetype php        setlocal ts=4 sts=4 sw=4
 au Filetype yaml            setlocal ts=2 sts=2 sw=2 expandtab
 au Filetype typescript      setlocal ts=2 sts=2 sw=2 expandtab
 au BufNewFile,BufRead Jenkinsfile setf groovy
+set autochdir
